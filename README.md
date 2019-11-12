@@ -1,1 +1,4 @@
-# gatorhub
+# GatorHub
+
+# Members:
+- Russell Wong
