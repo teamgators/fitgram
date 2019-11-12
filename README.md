@@ -2,3 +2,4 @@
 
 # Members:
 - Russell Wong
+- Sunminder Sandhu
