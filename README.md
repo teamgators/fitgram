@@ -2,8 +2,8 @@
 
 ## Members:
 - Russell Wong
-- Sunminder Sandhu
 - Anmol Gondara
+- Sunminder Sandhu
 
 ## Overview
 ### Description
