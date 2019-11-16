@@ -1,6 +1,6 @@
 # FitGram
 
-## Members:
+## Members
 - Russell Wong
 - Anmol Gondara
 - Sunminder Sandhu
