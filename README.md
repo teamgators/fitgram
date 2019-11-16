@@ -26,3 +26,7 @@ FitGram is a personal trainer in the form of a mobile application that guides us
 - User can delete a post
 - User can receive daily health facts or take a health quiz (New Tab/Screen)
 - User can receive a daily reminder to workout
+
+### 2. Wireframes/Design
+
+<img src="https://i.imgur.com/F4Nfp1n.jpg" width=500>
