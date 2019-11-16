@@ -1,4 +1,4 @@
-# FitGram
+# HealthGram
 
 ## Members
 - Russell Wong
@@ -7,7 +7,7 @@
 
 ## Overview
 ### Description
-FitGram is a personal trainer in the form of a mobile application that guides users on workout exercises. It provides an awesome platform to post photos to keep track of their progress and share it to their social media accounts.
+HealthGram is a personal trainer in the form of a mobile application that guides users on workout exercises. It provides an awesome platform to post photos to keep track of their progress and share it to their social media accounts.
 
 ## Application Specs
 
