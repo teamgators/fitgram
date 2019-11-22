@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4600365E23874EAE00E60EF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4600365D23874EAE00E60EF6 /* AppDelegate.swift */; };
-		4600366023874EAE00E60EF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4600365F23874EAE00E60EF6 /* ViewController.swift */; };
 		4600366323874EAE00E60EF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4600366123874EAE00E60EF6 /* Main.storyboard */; };
 		4600366523874EB400E60EF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4600366423874EB400E60EF6 /* Assets.xcassets */; };
 		4600366823874EB400E60EF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4600366623874EB400E60EF6 /* LaunchScreen.storyboard */; };
+		A3D098672387624A00832C8C /* HealthLabRegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D098662387624A00832C8C /* HealthLabRegistrationVC.swift */; };
 		C9E9B1E83D5EC63B72F39CA6 /* Pods_healthGram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E024B4A1047A6955F2EF0834 /* Pods_healthGram.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,13 +36,13 @@
 		458B172ACBB981EE87B96752 /* Pods-healthGram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-healthGram.release.xcconfig"; path = "Target Support Files/Pods-healthGram/Pods-healthGram.release.xcconfig"; sourceTree = "<group>"; };
 		4600365A23874EAE00E60EF6 /* healthGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = healthGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4600365D23874EAE00E60EF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4600365F23874EAE00E60EF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4600366223874EAE00E60EF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4600366423874EB400E60EF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4600366723874EB400E60EF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4600366923874EB400E60EF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4600366E23874EB400E60EF6 /* healthGramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = healthGramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4600367923874EB400E60EF6 /* healthGramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = healthGramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3D098662387624A00832C8C /* HealthLabRegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthLabRegistrationVC.swift; sourceTree = "<group>"; };
 		DD096713D2365C5061829802 /* Pods-healthGram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-healthGram.debug.xcconfig"; path = "Target Support Files/Pods-healthGram/Pods-healthGram.debug.xcconfig"; sourceTree = "<group>"; };
 		E024B4A1047A6955F2EF0834 /* Pods_healthGram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_healthGram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -87,7 +87,6 @@
 				DD096713D2365C5061829802 /* Pods-healthGram.debug.xcconfig */,
 				458B172ACBB981EE87B96752 /* Pods-healthGram.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -114,14 +113,22 @@
 		4600365C23874EAE00E60EF6 /* healthGram */ = {
 			isa = PBXGroup;
 			children = (
+				A3D09865238761BF00832C8C /* Controller */,
 				4600365D23874EAE00E60EF6 /* AppDelegate.swift */,
-				4600365F23874EAE00E60EF6 /* ViewController.swift */,
 				4600366123874EAE00E60EF6 /* Main.storyboard */,
 				4600366423874EB400E60EF6 /* Assets.xcassets */,
 				4600366623874EB400E60EF6 /* LaunchScreen.storyboard */,
 				4600366923874EB400E60EF6 /* Info.plist */,
 			);
 			path = healthGram;
+			sourceTree = "<group>";
+		};
+		A3D09865238761BF00832C8C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A3D098662387624A00832C8C /* HealthLabRegistrationVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,8 +319,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4600366023874EAE00E60EF6 /* ViewController.swift in Sources */,
 				4600365E23874EAE00E60EF6 /* AppDelegate.swift in Sources */,
+				A3D098672387624A00832C8C /* HealthLabRegistrationVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
