@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A0B883F238762D2005D8AE9 /* HealthGramLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0B883E238762D2005D8AE9 /* HealthGramLoginVC.swift */; };
 		4600365E23874EAE00E60EF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4600365D23874EAE00E60EF6 /* AppDelegate.swift */; };
-		4600366023874EAE00E60EF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4600365F23874EAE00E60EF6 /* ViewController.swift */; };
 		4600366323874EAE00E60EF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4600366123874EAE00E60EF6 /* Main.storyboard */; };
 		4600366523874EB400E60EF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4600366423874EB400E60EF6 /* Assets.xcassets */; };
 		4600366823874EB400E60EF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4600366623874EB400E60EF6 /* LaunchScreen.storyboard */; };
@@ -33,10 +33,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A0B883E238762D2005D8AE9 /* HealthGramLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthGramLoginVC.swift; sourceTree = "<group>"; };
 		458B172ACBB981EE87B96752 /* Pods-healthGram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-healthGram.release.xcconfig"; path = "Target Support Files/Pods-healthGram/Pods-healthGram.release.xcconfig"; sourceTree = "<group>"; };
 		4600365A23874EAE00E60EF6 /* healthGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = healthGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4600365D23874EAE00E60EF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4600365F23874EAE00E60EF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4600366223874EAE00E60EF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4600366423874EB400E60EF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4600366723874EB400E60EF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -87,8 +87,15 @@
 				DD096713D2365C5061829802 /* Pods-healthGram.debug.xcconfig */,
 				458B172ACBB981EE87B96752 /* Pods-healthGram.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		2A0B883D2387627B005D8AE9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2A0B883E238762D2005D8AE9 /* HealthGramLoginVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		4600365123874EAE00E60EF6 = {
@@ -114,8 +121,8 @@
 		4600365C23874EAE00E60EF6 /* healthGram */ = {
 			isa = PBXGroup;
 			children = (
+				2A0B883D2387627B005D8AE9 /* Controller */,
 				4600365D23874EAE00E60EF6 /* AppDelegate.swift */,
-				4600365F23874EAE00E60EF6 /* ViewController.swift */,
 				4600366123874EAE00E60EF6 /* Main.storyboard */,
 				4600366423874EB400E60EF6 /* Assets.xcassets */,
 				4600366623874EB400E60EF6 /* LaunchScreen.storyboard */,
@@ -312,8 +319,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4600366023874EAE00E60EF6 /* ViewController.swift in Sources */,
 				4600365E23874EAE00E60EF6 /* AppDelegate.swift in Sources */,
+				2A0B883F238762D2005D8AE9 /* HealthGramLoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
