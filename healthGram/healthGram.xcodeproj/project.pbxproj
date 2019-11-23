@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2A0B883F238762D2005D8AE9 /* HealthGramLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0B883E238762D2005D8AE9 /* HealthGramLoginVC.swift */; };
+		2A0B88432388C1F5005D8AE9 /* HealthGramExercisesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0B88422388C1F5005D8AE9 /* HealthGramExercisesVC.swift */; };
+		2A0B88452388D6A6005D8AE9 /* HealthLabProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0B88442388D6A6005D8AE9 /* HealthLabProfileVC.swift */; };
 		4600365E23874EAE00E60EF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4600365D23874EAE00E60EF6 /* AppDelegate.swift */; };
 		4600366323874EAE00E60EF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4600366123874EAE00E60EF6 /* Main.storyboard */; };
 		4600366523874EB400E60EF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4600366423874EB400E60EF6 /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 
 /* Begin PBXFileReference section */
 		2A0B883E238762D2005D8AE9 /* HealthGramLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthGramLoginVC.swift; sourceTree = "<group>"; };
+		2A0B88422388C1F5005D8AE9 /* HealthGramExercisesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthGramExercisesVC.swift; sourceTree = "<group>"; };
+		2A0B88442388D6A6005D8AE9 /* HealthLabProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthLabProfileVC.swift; sourceTree = "<group>"; };
 		458B172ACBB981EE87B96752 /* Pods-healthGram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-healthGram.release.xcconfig"; path = "Target Support Files/Pods-healthGram/Pods-healthGram.release.xcconfig"; sourceTree = "<group>"; };
 		4600365A23874EAE00E60EF6 /* healthGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = healthGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4600365D23874EAE00E60EF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				2A0B883E238762D2005D8AE9 /* HealthGramLoginVC.swift */,
+				2A0B88422388C1F5005D8AE9 /* HealthGramExercisesVC.swift */,
+				2A0B88442388D6A6005D8AE9 /* HealthLabProfileVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -319,7 +325,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A0B88432388C1F5005D8AE9 /* HealthGramExercisesVC.swift in Sources */,
 				4600365E23874EAE00E60EF6 /* AppDelegate.swift in Sources */,
+				2A0B88452388D6A6005D8AE9 /* HealthLabProfileVC.swift in Sources */,
 				2A0B883F238762D2005D8AE9 /* HealthGramLoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
