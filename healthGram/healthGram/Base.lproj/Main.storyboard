@@ -82,6 +82,7 @@
                     <connections>
                         <outlet property="email" destination="ya3-3M-iOh" id="hQy-zf-rqj"/>
                         <outlet property="password" destination="81e-R9-1EY" id="CVO-Ky-lXU"/>
+                        <segue destination="ac2-gM-kD6" kind="presentation" identifier="loginSegue" id="uIx-rx-fvR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

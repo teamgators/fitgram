@@ -7,15 +7,14 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class HealthGramLoginVC: UIViewController {
-    
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
@@ -23,9 +22,24 @@ class HealthGramLoginVC: UIViewController {
         view.endEditing(true)
     }
     
-    
     @IBAction func onLogin(_ sender: Any) {
+        guard let email = email.text, let password = password.text else {
+            return
+        }
         
+        Auth.auth().signIn(withEmail: email, password: password) {
+            (success, error) in
+            if error != nil {
+                // handles error and gives an error message to the user
+                print("Error: \(String(describing: error?.localizedDescription))")
+                Alerts.showAlert(on: self, title: "Alert", message: error?.localizedDescription ?? "")
+            }
+            else {
+                // when the user signs in successfully, perform segue to exercise screen
+                self.performSegue(withIdentifier: "loginSegue", sender: self)
+                print("User logged in")
+            }
+        }
     }
     /*
     // MARK: - Navigation
