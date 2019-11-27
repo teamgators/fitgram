@@ -7,9 +7,12 @@
 //
 
 import UIKit
+//import FirebaseDatabase
 
 class HealthGramExercisesVC: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
