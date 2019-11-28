@@ -1,24 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Health Lab RegistrationVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HealthLabRegistrationVC" customModule="healthGram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ios-app-icon" translatesAutoresizingMaskIntoConstraints="NO" id="FQT-7T-ntS">
+                                <rect key="frame" x="67" y="121" width="240" height="83"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rBD-Pj-6gT" userLabel="First Name Field">
+                                <rect key="frame" x="62" y="252" width="250" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="CBy-EL-zgd"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name: " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GaR-Av-5a2" userLabel="Last Name Field">
+                                <rect key="frame" x="62" y="321" width="250" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ZL6-HC-601"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bSF-Rd-pE0" userLabel="Email Field">
+                                <rect key="frame" x="62" y="390" width="250" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="k6u-7d-ZW5"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password: " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nO7-Ge-cUB" userLabel="Password Field">
+                                <rect key="frame" x="62" y="459" width="250" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Jm0-Qz-iLp"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtO-BY-ao4">
+                                <rect key="frame" x="87" y="528" width="200" height="72"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onNewAccount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MN7-kE-CVZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqV-Cr-K8X">
+                                <rect key="frame" x="59" y="624" width="257" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Already have an Account">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uqV-Cr-K8X" firstAttribute="top" secondItem="vtO-BY-ao4" secondAttribute="bottom" constant="24" id="6oQ-dY-Y27"/>
+                            <constraint firstItem="GaR-Av-5a2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="7wT-D9-Us8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GaR-Av-5a2" secondAttribute="trailing" constant="63" id="AB5-lH-xh3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nO7-Ge-cUB" secondAttribute="trailing" constant="63" id="AKY-Uy-wkp"/>
+                            <constraint firstItem="bSF-Rd-pE0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="AVq-4O-u0s"/>
+                            <constraint firstItem="rBD-Pj-6gT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="ErK-Mb-tRZ"/>
+                            <constraint firstItem="nO7-Ge-cUB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="FKW-ae-hA2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vtO-BY-ao4" secondAttribute="trailing" constant="88" id="Jfw-fc-6xG"/>
+                            <constraint firstItem="vtO-BY-ao4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="KXR-SG-sSv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rBD-Pj-6gT" secondAttribute="trailing" constant="63" id="Mrv-dO-5aT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uqV-Cr-K8X" secondAttribute="trailing" constant="59" id="MxH-Rb-PUE"/>
+                            <constraint firstItem="uqV-Cr-K8X" firstAttribute="top" secondItem="vtO-BY-ao4" secondAttribute="bottom" constant="24" id="NOA-ti-LRn"/>
+                            <constraint firstItem="rBD-Pj-6gT" firstAttribute="top" secondItem="FQT-7T-ntS" secondAttribute="bottom" constant="48" id="NZR-Nf-yYK"/>
+                            <constraint firstItem="vtO-BY-ao4" firstAttribute="top" secondItem="nO7-Ge-cUB" secondAttribute="bottom" constant="29" id="OLO-Vg-mT3"/>
+                            <constraint firstItem="FQT-7T-ntS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="77" id="OOv-Gk-rRl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bSF-Rd-pE0" secondAttribute="trailing" constant="63" id="Sn2-oE-Kds"/>
+                            <constraint firstItem="GaR-Av-5a2" firstAttribute="top" secondItem="rBD-Pj-6gT" secondAttribute="bottom" constant="29" id="UBD-Ft-ml4"/>
+                            <constraint firstItem="GaR-Av-5a2" firstAttribute="top" secondItem="rBD-Pj-6gT" secondAttribute="bottom" constant="29" id="UXN-pA-cxT"/>
+                            <constraint firstItem="FQT-7T-ntS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="WgD-bd-w0k"/>
+                            <constraint firstItem="rBD-Pj-6gT" firstAttribute="top" secondItem="FQT-7T-ntS" secondAttribute="bottom" constant="48" id="bf0-jB-Ub4"/>
+                            <constraint firstItem="bSF-Rd-pE0" firstAttribute="top" secondItem="GaR-Av-5a2" secondAttribute="bottom" constant="29" id="glP-tg-2eF"/>
+                            <constraint firstItem="bSF-Rd-pE0" firstAttribute="top" secondItem="GaR-Av-5a2" secondAttribute="bottom" constant="29" id="icc-zN-55o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uqV-Cr-K8X" secondAttribute="bottom" constant="69" id="lSS-zx-d2l"/>
+                            <constraint firstItem="uqV-Cr-K8X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="59" id="m89-Wv-WG7"/>
+                            <constraint firstItem="nO7-Ge-cUB" firstAttribute="top" secondItem="bSF-Rd-pE0" secondAttribute="bottom" constant="29" id="sOx-Fm-bHg"/>
+                            <constraint firstItem="nO7-Ge-cUB" firstAttribute="top" secondItem="bSF-Rd-pE0" secondAttribute="bottom" constant="29" id="v6K-n6-114"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FQT-7T-ntS" secondAttribute="trailing" constant="68" id="zoR-5v-981"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="bSF-Rd-pE0" id="M6m-ce-7ER"/>
+                        <outlet property="firstNameField" destination="rBD-Pj-6gT" id="pQe-oD-mGS"/>
+                        <outlet property="lastNameField" destination="GaR-Av-5a2" id="ayR-tY-zPD"/>
+                        <outlet property="passwordField" destination="nO7-Ge-cUB" id="oYe-jK-mOl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="181.59999999999999" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ios-app-icon" width="83" height="83"/>
+    </resources>
 </document>
