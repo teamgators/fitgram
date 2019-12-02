@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>197516321131-j7kgmh9phmca72m8023l65qbi7g384e9.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.197516321131-j7kgmh9phmca72m8023l65qbi7g384e9</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBXg6Rdd_Pp2pzS1J7ZLy8tfhClwAu8LXo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>197516321131</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.russellwong.healthGram</string>
+	<key>PROJECT_ID</key>
+	<string>healthgram-de2d7</string>
+	<key>STORAGE_BUCKET</key>
+	<string>healthgram-de2d7.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:197516321131:ios:d965711e547f66c3acec2e</string>
+	<key>DATABASE_URL</key>
+	<string>https://healthgram-de2d7.firebaseio.com</string>
+</dict>
+</plist>
