@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
+        
+        // This allows user to stay logged in
+        // If user does not logout, initial window = homeTabBar
+        if Auth.auth().currentUser != nil {
+            // instance of main storboard
+            let main = UIStoryboard(name: "Main", bundle: nil)
+            // make initial window
+            let homeTabBar = main.instantiateViewController(withIdentifier: "homeTabBar")
+            window?.rootViewController = homeTabBar
+        }
+        
         return true
     }
 

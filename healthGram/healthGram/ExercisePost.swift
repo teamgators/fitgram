@@ -7,3 +7,18 @@
 //
 
 import Foundation
+import UIKit
+
+class ExercisePost{
+    let name: String
+    let equipment: String
+    let part: String
+    let instructions: String
+    
+    init(name: String, equipment: String, part: String, instructions: String) {
+        self.name = name
+        self.equipment = equipment
+        self.part = part
+        self.instructions = instructions
+    }
+}

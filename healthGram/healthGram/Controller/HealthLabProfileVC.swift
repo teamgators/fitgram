@@ -7,23 +7,34 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseDatabase
+import FirebaseStorage
 
 class HealthLabProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     
+    //array of Post (refer to Post.swift file)
+    var posts = [Post]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tableView.delegate = self
+        tableView.dataSource = self
         // Do any additional setup after loading the view.
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return posts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
+        let post = posts[indexPath.row]
+        
+        return cell
     }
     
     @IBAction func onLogout(_ sender: Any) {

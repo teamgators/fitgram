@@ -7,23 +7,39 @@
 //
 
 import UIKit
-//import FirebaseDatabase
+import FirebaseDatabase
 
 class HealthGramExercisesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     
+    // store exercises here
+    var exercises = [ExercisePost]()
+    // reference to database
+    let dataRef = Database.database().reference()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        tableView.delegate = self
+        tableView.dataSource = self
         // Do any additional setup after loading the view.
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ExerciseCell") as! ExerciseCell
+        let exercise = exercises[indexPath.row]
+        
+        cell.exerciseTypeLabel.text = exercise.part
+        cell.exerciseNameLabel.text = exercise.name
+        cell.equipmentLabel.text = exercise.equipment
+        
+        return cell
+        
     }
     
     /*
