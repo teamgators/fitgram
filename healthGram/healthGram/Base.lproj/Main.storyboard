@@ -60,24 +60,24 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="0.8535691352739726" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="81e-R9-1EY" firstAttribute="leading" secondItem="uWK-rK-xI8" secondAttribute="leading" constant="62" id="3AX-tp-m7g"/>
+                            <constraint firstItem="81e-R9-1EY" firstAttribute="leading" secondItem="X89-9S-8Cs" secondAttribute="leading" constant="62" id="3AX-tp-m7g"/>
                             <constraint firstItem="ya3-3M-iOh" firstAttribute="top" secondItem="Nm4-9t-TNX" secondAttribute="bottom" constant="52" id="3pV-kj-lZ0"/>
-                            <constraint firstItem="Nm4-9t-TNX" firstAttribute="top" secondItem="uWK-rK-xI8" secondAttribute="top" constant="113" id="5KO-fG-Jkg"/>
-                            <constraint firstItem="uWK-rK-xI8" firstAttribute="trailing" secondItem="9In-dz-YBA" secondAttribute="trailing" constant="87" id="HiH-Wf-tVd"/>
-                            <constraint firstItem="ya3-3M-iOh" firstAttribute="leading" secondItem="uWK-rK-xI8" secondAttribute="leading" constant="62" id="LSH-RA-eXv"/>
+                            <constraint firstItem="Nm4-9t-TNX" firstAttribute="top" secondItem="X89-9S-8Cs" secondAttribute="top" constant="113" id="5KO-fG-Jkg"/>
+                            <constraint firstItem="X89-9S-8Cs" firstAttribute="trailing" secondItem="9In-dz-YBA" secondAttribute="trailing" constant="87" id="HiH-Wf-tVd"/>
+                            <constraint firstItem="ya3-3M-iOh" firstAttribute="leading" secondItem="X89-9S-8Cs" secondAttribute="leading" constant="62" id="LSH-RA-eXv"/>
                             <constraint firstItem="9In-dz-YBA" firstAttribute="top" secondItem="81e-R9-1EY" secondAttribute="bottom" constant="26" id="M0d-z0-zdf"/>
                             <constraint firstItem="81e-R9-1EY" firstAttribute="top" secondItem="ya3-3M-iOh" secondAttribute="bottom" constant="29" id="M7P-f1-eK2"/>
-                            <constraint firstItem="Nm4-9t-TNX" firstAttribute="leading" secondItem="uWK-rK-xI8" secondAttribute="leading" constant="67" id="N4F-hy-ccO"/>
-                            <constraint firstItem="uWK-rK-xI8" firstAttribute="trailing" secondItem="Nm4-9t-TNX" secondAttribute="trailing" constant="68" id="PpL-nX-KBE"/>
-                            <constraint firstItem="9In-dz-YBA" firstAttribute="leading" secondItem="uWK-rK-xI8" secondAttribute="leading" constant="88" id="Ulr-Yd-176"/>
+                            <constraint firstItem="Nm4-9t-TNX" firstAttribute="leading" secondItem="X89-9S-8Cs" secondAttribute="leading" constant="67" id="N4F-hy-ccO"/>
+                            <constraint firstItem="X89-9S-8Cs" firstAttribute="trailing" secondItem="Nm4-9t-TNX" secondAttribute="trailing" constant="68" id="PpL-nX-KBE"/>
+                            <constraint firstItem="9In-dz-YBA" firstAttribute="leading" secondItem="X89-9S-8Cs" secondAttribute="leading" constant="88" id="Ulr-Yd-176"/>
                             <constraint firstItem="Yff-RX-dfU" firstAttribute="top" relation="lessThanOrEqual" secondItem="9In-dz-YBA" secondAttribute="bottom" constant="29" id="b0z-N5-93R"/>
-                            <constraint firstItem="uWK-rK-xI8" firstAttribute="bottom" secondItem="Yff-RX-dfU" secondAttribute="bottom" constant="165" id="hus-g7-W6m"/>
-                            <constraint firstItem="uWK-rK-xI8" firstAttribute="trailing" secondItem="ya3-3M-iOh" secondAttribute="trailing" constant="63" id="iBw-U5-Khe"/>
-                            <constraint firstItem="uWK-rK-xI8" firstAttribute="trailing" secondItem="81e-R9-1EY" secondAttribute="trailing" constant="63" id="iyD-2c-Xmy"/>
-                            <constraint firstItem="Yff-RX-dfU" firstAttribute="leading" secondItem="uWK-rK-xI8" secondAttribute="leading" constant="88" id="jb2-0q-dxT"/>
-                            <constraint firstItem="uWK-rK-xI8" firstAttribute="trailing" secondItem="Yff-RX-dfU" secondAttribute="trailing" constant="88" id="q6n-q6-mOj"/>
+                            <constraint firstItem="X89-9S-8Cs" firstAttribute="bottom" secondItem="Yff-RX-dfU" secondAttribute="bottom" constant="165" id="hus-g7-W6m"/>
+                            <constraint firstItem="X89-9S-8Cs" firstAttribute="trailing" secondItem="ya3-3M-iOh" secondAttribute="trailing" constant="63" id="iBw-U5-Khe"/>
+                            <constraint firstItem="X89-9S-8Cs" firstAttribute="trailing" secondItem="81e-R9-1EY" secondAttribute="trailing" constant="63" id="iyD-2c-Xmy"/>
+                            <constraint firstItem="Yff-RX-dfU" firstAttribute="leading" secondItem="X89-9S-8Cs" secondAttribute="leading" constant="88" id="jb2-0q-dxT"/>
+                            <constraint firstItem="X89-9S-8Cs" firstAttribute="trailing" secondItem="Yff-RX-dfU" secondAttribute="trailing" constant="88" id="q6n-q6-mOj"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="uWK-rK-xI8"/>
+                        <viewLayoutGuide key="safeArea" id="X89-9S-8Cs"/>
                     </view>
                     <connections>
                         <outlet property="email" destination="ya3-3M-iOh" id="hQy-zf-rqj"/>
@@ -194,7 +194,7 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="aoy-hF-wCA"/>
+                        <viewLayoutGuide key="safeArea" id="DVh-1D-X3C"/>
                     </view>
                     <navigationItem key="navigationItem" title="Exercises" id="lQ7-I4-aXM"/>
                     <connections>
@@ -304,7 +304,7 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="8qK-TE-Q45"/>
+                        <viewLayoutGuide key="safeArea" id="VPH-Lk-wNo"/>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="y0N-lQ-i9J">
                         <barButtonItem key="leftBarButtonItem" title="Create" id="jAh-Cs-M7V"/>
