@@ -2,7 +2,7 @@
 //  PostCell.swift
 //  healthGram
 //
-//  Created by Anmol Gondara on 11/27/19.
+//  Created by Sunminder Sandhu on 12/2/19.
 //  Copyright © 2019 Russell Wong. All rights reserved.
 //
 
@@ -11,8 +11,10 @@ import UIKit
 class PostCell: UITableViewCell {
 
     @IBOutlet weak var photoView: UIImageView!
-    @IBOutlet weak var usernameLabel: UILabel!
+    
     @IBOutlet weak var captionLabel: UILabel!
+    
+    @IBOutlet weak var usernameLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
