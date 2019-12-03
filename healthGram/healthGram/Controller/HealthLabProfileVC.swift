@@ -53,7 +53,7 @@ class HealthLabProfileVC: UIViewController, UITableViewDelegate, UITableViewData
         
         print("Debug1")
         print(post.caption)
-        print(post.imageDownloadUrl)
+        print(post.imageDownloadUrl!)
         
         if let imageDownloadUrl = post.imageDownloadUrl {
             print("Debug2")
