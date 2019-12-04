@@ -76,7 +76,8 @@ class CameraVC: UIViewController {
     @IBAction func onCameraButton(_ sender: Any) {
         
         let picker = UIImagePickerController()
-        picker.delegate = self
+        picker.delegate = (self as! UIImagePickerControllerDelegate &
+            UINavigationControllerDelegate)
         picker.allowsEditing = true
         
         if UIImagePickerController.isSourceTypeAvailable(.camera) {

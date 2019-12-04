@@ -1,8 +1,8 @@
 //
-//  HealthLabRegistrationVC.swift
+//  HealthGramRegistrationVC.swift
 //  healthGram
 //
-//  Created by Sunminder Sandhu on 12/2/19.
+//  Created by Sunminder Sandhu on 12/3/19.
 //  Copyright © 2019 Russell Wong. All rights reserved.
 //
 
@@ -10,13 +10,12 @@ import UIKit
 import FirebaseAuth
 import FirebaseDatabase
 
-class HealthLabRegistrationVC: UIViewController {
+class HealthGramRegistrationVC: UIViewController {
 
     @IBOutlet weak var firstNameField: UITextField!
     @IBOutlet weak var lastNameField: UITextField!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,7 +27,7 @@ class HealthLabRegistrationVC: UIViewController {
     }
     
 
-    @IBAction func onNewAccount(_ sender: UIButton) {
+    @IBAction func onNewAccount(_ sender: Any) {
         guard let email = emailField.text, let password = passwordField.text else {
             return
         }
@@ -53,7 +52,5 @@ class HealthLabRegistrationVC: UIViewController {
                 print("New Account created")
             }
         }
-        
     }
-    
 }
