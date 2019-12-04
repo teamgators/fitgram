@@ -72,7 +72,7 @@ class HealthGramExercisesVC: UIViewController, UITableViewDelegate, UITableViewD
         let indexPath = tableView.indexPath(for: cell)
         let exerciseInfo = exercises[(indexPath?.row)!]
         
-        let exerciseInfoVC = segue.destination as! HealthLabExerciseInfoVC
+        let exerciseInfoVC = segue.destination as! HealthGramExerciseInfoVC
         exerciseInfoVC.exerciseInstructions = exerciseInfo.instructions
         exerciseInfoVC.exerciseName = exerciseInfo.name
         tableView.deselectRow(at: indexPath!, animated: true)
