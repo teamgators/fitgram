@@ -9,15 +9,23 @@
 /* Begin PBXBuildFile section */
 		2A0B883F238762D2005D8AE9 /* HealthGramLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0B883E238762D2005D8AE9 /* HealthGramLoginVC.swift */; };
 		2A0B88432388C1F5005D8AE9 /* HealthGramExercisesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0B88422388C1F5005D8AE9 /* HealthGramExercisesVC.swift */; };
-		2A0B88452388D6A6005D8AE9 /* HealthLabProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0B88442388D6A6005D8AE9 /* HealthLabProfileVC.swift */; };
+		2A0B88452388D6A6005D8AE9 /* HealthGramProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0B88442388D6A6005D8AE9 /* HealthGramProfileVC.swift */; };
 		2A0B8847238CCF2C005D8AE9 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0B8846238CCF2C005D8AE9 /* Alerts.swift */; };
-		2A0B884A238CF20B005D8AE9 /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0B8849238CF20B005D8AE9 /* ExerciseCell.swift */; };
-		2A0B884C238E6941005D8AE9 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0B884B238E6941005D8AE9 /* PostCell.swift */; };
+		2ACADAB423963BB400B9097D /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACADAB323963BB400B9097D /* Button.swift */; };
 		4600365E23874EAE00E60EF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4600365D23874EAE00E60EF6 /* AppDelegate.swift */; };
 		4600366323874EAE00E60EF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4600366123874EAE00E60EF6 /* Main.storyboard */; };
 		4600366523874EB400E60EF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4600366423874EB400E60EF6 /* Assets.xcassets */; };
 		4600366823874EB400E60EF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4600366623874EB400E60EF6 /* LaunchScreen.storyboard */; };
-		A3D098672387624A00832C8C /* HealthLabRegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D098662387624A00832C8C /* HealthLabRegistrationVC.swift */; };
+		4618E92723921878003A2FF2 /* ExercisePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4618E92623921878003A2FF2 /* ExercisePost.swift */; };
+		4618E92923921910003A2FF2 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4618E92823921910003A2FF2 /* Post.swift */; };
+		46286E80239114A00022880D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46286E7F239114A00022880D /* GoogleService-Info.plist */; };
+		46286E81239114A00022880D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46286E7F239114A00022880D /* GoogleService-Info.plist */; };
+		46286E82239114A00022880D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46286E7F239114A00022880D /* GoogleService-Info.plist */; };
+		469DEDC32399C6420015D762 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469DEDC12399C6420015D762 /* PostCell.swift */; };
+		469DEDC42399C6420015D762 /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469DEDC22399C6420015D762 /* ExerciseCell.swift */; };
+		A3C530642396270500F44D1E /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C530632396270500F44D1E /* CameraVC.swift */; };
+		A3C5306C23976FDA00F44D1E /* HealthGramRegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5306B23976FDA00F44D1E /* HealthGramRegistrationVC.swift */; };
+		A3C530722397726900F44D1E /* HealthGramExerciseInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C530712397726900F44D1E /* HealthGramExerciseInfoVC.swift */; };
 		C9E9B1E83D5EC63B72F39CA6 /* Pods_healthGram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E024B4A1047A6955F2EF0834 /* Pods_healthGram.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,10 +49,9 @@
 /* Begin PBXFileReference section */
 		2A0B883E238762D2005D8AE9 /* HealthGramLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthGramLoginVC.swift; sourceTree = "<group>"; };
 		2A0B88422388C1F5005D8AE9 /* HealthGramExercisesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthGramExercisesVC.swift; sourceTree = "<group>"; };
-		2A0B88442388D6A6005D8AE9 /* HealthLabProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthLabProfileVC.swift; sourceTree = "<group>"; };
+		2A0B88442388D6A6005D8AE9 /* HealthGramProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthGramProfileVC.swift; sourceTree = "<group>"; };
 		2A0B8846238CCF2C005D8AE9 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
-		2A0B8849238CF20B005D8AE9 /* ExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCell.swift; sourceTree = "<group>"; };
-		2A0B884B238E6941005D8AE9 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		2ACADAB323963BB400B9097D /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		458B172ACBB981EE87B96752 /* Pods-healthGram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-healthGram.release.xcconfig"; path = "Target Support Files/Pods-healthGram/Pods-healthGram.release.xcconfig"; sourceTree = "<group>"; };
 		4600365A23874EAE00E60EF6 /* healthGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = healthGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4600365D23874EAE00E60EF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +61,14 @@
 		4600366923874EB400E60EF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4600366E23874EB400E60EF6 /* healthGramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = healthGramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4600367923874EB400E60EF6 /* healthGramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = healthGramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A3D098662387624A00832C8C /* HealthLabRegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthLabRegistrationVC.swift; sourceTree = "<group>"; };
+		4618E92623921878003A2FF2 /* ExercisePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisePost.swift; sourceTree = "<group>"; };
+		4618E92823921910003A2FF2 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		46286E7F239114A00022880D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		469DEDC12399C6420015D762 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		469DEDC22399C6420015D762 /* ExerciseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseCell.swift; sourceTree = "<group>"; };
+		A3C530632396270500F44D1E /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
+		A3C5306B23976FDA00F44D1E /* HealthGramRegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthGramRegistrationVC.swift; sourceTree = "<group>"; };
+		A3C530712397726900F44D1E /* HealthGramExerciseInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthGramExerciseInfoVC.swift; sourceTree = "<group>"; };
 		DD096713D2365C5061829802 /* Pods-healthGram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-healthGram.debug.xcconfig"; path = "Target Support Files/Pods-healthGram/Pods-healthGram.debug.xcconfig"; sourceTree = "<group>"; };
 		E024B4A1047A6955F2EF0834 /* Pods_healthGram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_healthGram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -108,7 +122,10 @@
 				2A0B8848238CEF64005D8AE9 /* Cell */,
 				2A0B883E238762D2005D8AE9 /* HealthGramLoginVC.swift */,
 				2A0B88422388C1F5005D8AE9 /* HealthGramExercisesVC.swift */,
-				2A0B88442388D6A6005D8AE9 /* HealthLabProfileVC.swift */,
+				2A0B88442388D6A6005D8AE9 /* HealthGramProfileVC.swift */,
+				A3C530632396270500F44D1E /* CameraVC.swift */,
+				A3C5306B23976FDA00F44D1E /* HealthGramRegistrationVC.swift */,
+				A3C530712397726900F44D1E /* HealthGramExerciseInfoVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -116,8 +133,8 @@
 		2A0B8848238CEF64005D8AE9 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				2A0B8849238CF20B005D8AE9 /* ExerciseCell.swift */,
-				2A0B884B238E6941005D8AE9 /* PostCell.swift */,
+				469DEDC22399C6420015D762 /* ExerciseCell.swift */,
+				469DEDC12399C6420015D762 /* PostCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -147,21 +164,17 @@
 			children = (
 				2A0B8846238CCF2C005D8AE9 /* Alerts.swift */,
 				4600365D23874EAE00E60EF6 /* AppDelegate.swift */,
+				4618E92623921878003A2FF2 /* ExercisePost.swift */,
+				4618E92823921910003A2FF2 /* Post.swift */,
+				2ACADAB323963BB400B9097D /* Button.swift */,
 				2A0B883D2387627B005D8AE9 /* Controller */,
 				4600366123874EAE00E60EF6 /* Main.storyboard */,
 				4600366423874EB400E60EF6 /* Assets.xcassets */,
 				4600366623874EB400E60EF6 /* LaunchScreen.storyboard */,
 				4600366923874EB400E60EF6 /* Info.plist */,
+				46286E7F239114A00022880D /* GoogleService-Info.plist */,
 			);
 			path = healthGram;
-			sourceTree = "<group>";
-		};
-		A3D09865238761BF00832C8C /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				A3D098662387624A00832C8C /* HealthLabRegistrationVC.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4600366823874EB400E60EF6 /* LaunchScreen.storyboard in Resources */,
+				46286E80239114A00022880D /* GoogleService-Info.plist in Resources */,
 				4600366523874EB400E60EF6 /* Assets.xcassets in Resources */,
 				4600366323874EAE00E60EF6 /* Main.storyboard in Resources */,
 			);
@@ -280,6 +294,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46286E81239114A00022880D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46286E82239114A00022880D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,13 +368,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A0B884C238E6941005D8AE9 /* PostCell.swift in Sources */,
 				2A0B88432388C1F5005D8AE9 /* HealthGramExercisesVC.swift in Sources */,
 				2A0B8847238CCF2C005D8AE9 /* Alerts.swift in Sources */,
+				A3C5306C23976FDA00F44D1E /* HealthGramRegistrationVC.swift in Sources */,
+				469DEDC42399C6420015D762 /* ExerciseCell.swift in Sources */,
+				4618E92723921878003A2FF2 /* ExercisePost.swift in Sources */,
 				4600365E23874EAE00E60EF6 /* AppDelegate.swift in Sources */,
-				2A0B88452388D6A6005D8AE9 /* HealthLabProfileVC.swift in Sources */,
+				2ACADAB423963BB400B9097D /* Button.swift in Sources */,
+				2A0B88452388D6A6005D8AE9 /* HealthGramProfileVC.swift in Sources */,
+				A3C530642396270500F44D1E /* CameraVC.swift in Sources */,
+				A3C530722397726900F44D1E /* HealthGramExerciseInfoVC.swift in Sources */,
+				4618E92923921910003A2FF2 /* Post.swift in Sources */,
 				2A0B883F238762D2005D8AE9 /* HealthGramLoginVC.swift in Sources */,
-				2A0B884A238CF20B005D8AE9 /* ExerciseCell.swift in Sources */,
+				469DEDC32399C6420015D762 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,7 +560,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = russellwong.healthGram;
+				PRODUCT_BUNDLE_IDENTIFIER = com.russellwong.healthGram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -556,7 +578,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = russellwong.healthGram;
+				PRODUCT_BUNDLE_IDENTIFIER = com.russellwong.healthGram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
