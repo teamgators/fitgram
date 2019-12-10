@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2A0B883F238762D2005D8AE9 /* HealthGramLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0B883E238762D2005D8AE9 /* HealthGramLoginVC.swift */; };
 		2A0B88432388C1F5005D8AE9 /* HealthGramExercisesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0B88422388C1F5005D8AE9 /* HealthGramExercisesVC.swift */; };
-		2A0B88452388D6A6005D8AE9 /* HealthLabProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0B88442388D6A6005D8AE9 /* HealthLabProfileVC.swift */; };
+		2A0B88452388D6A6005D8AE9 /* HealthGramProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0B88442388D6A6005D8AE9 /* HealthGramProfileVC.swift */; };
 		2A0B8847238CCF2C005D8AE9 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0B8846238CCF2C005D8AE9 /* Alerts.swift */; };
 		2ACADAB423963BB400B9097D /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACADAB323963BB400B9097D /* Button.swift */; };
 		4600365E23874EAE00E60EF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4600365D23874EAE00E60EF6 /* AppDelegate.swift */; };
@@ -21,6 +21,8 @@
 		46286E80239114A00022880D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46286E7F239114A00022880D /* GoogleService-Info.plist */; };
 		46286E81239114A00022880D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46286E7F239114A00022880D /* GoogleService-Info.plist */; };
 		46286E82239114A00022880D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46286E7F239114A00022880D /* GoogleService-Info.plist */; };
+		469DEDC32399C6420015D762 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469DEDC12399C6420015D762 /* PostCell.swift */; };
+		469DEDC42399C6420015D762 /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469DEDC22399C6420015D762 /* ExerciseCell.swift */; };
 		A3C530642396270500F44D1E /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C530632396270500F44D1E /* CameraVC.swift */; };
 		A3C5306C23976FDA00F44D1E /* HealthGramRegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5306B23976FDA00F44D1E /* HealthGramRegistrationVC.swift */; };
 		A3C530722397726900F44D1E /* HealthGramExerciseInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C530712397726900F44D1E /* HealthGramExerciseInfoVC.swift */; };
@@ -47,7 +49,7 @@
 /* Begin PBXFileReference section */
 		2A0B883E238762D2005D8AE9 /* HealthGramLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthGramLoginVC.swift; sourceTree = "<group>"; };
 		2A0B88422388C1F5005D8AE9 /* HealthGramExercisesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthGramExercisesVC.swift; sourceTree = "<group>"; };
-		2A0B88442388D6A6005D8AE9 /* HealthLabProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthLabProfileVC.swift; sourceTree = "<group>"; };
+		2A0B88442388D6A6005D8AE9 /* HealthGramProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthGramProfileVC.swift; sourceTree = "<group>"; };
 		2A0B8846238CCF2C005D8AE9 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		2ACADAB323963BB400B9097D /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		458B172ACBB981EE87B96752 /* Pods-healthGram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-healthGram.release.xcconfig"; path = "Target Support Files/Pods-healthGram/Pods-healthGram.release.xcconfig"; sourceTree = "<group>"; };
@@ -62,6 +64,8 @@
 		4618E92623921878003A2FF2 /* ExercisePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisePost.swift; sourceTree = "<group>"; };
 		4618E92823921910003A2FF2 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		46286E7F239114A00022880D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		469DEDC12399C6420015D762 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		469DEDC22399C6420015D762 /* ExerciseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseCell.swift; sourceTree = "<group>"; };
 		A3C530632396270500F44D1E /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		A3C5306B23976FDA00F44D1E /* HealthGramRegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthGramRegistrationVC.swift; sourceTree = "<group>"; };
 		A3C530712397726900F44D1E /* HealthGramExerciseInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthGramExerciseInfoVC.swift; sourceTree = "<group>"; };
@@ -118,7 +122,7 @@
 				2A0B8848238CEF64005D8AE9 /* Cell */,
 				2A0B883E238762D2005D8AE9 /* HealthGramLoginVC.swift */,
 				2A0B88422388C1F5005D8AE9 /* HealthGramExercisesVC.swift */,
-				2A0B88442388D6A6005D8AE9 /* HealthLabProfileVC.swift */,
+				2A0B88442388D6A6005D8AE9 /* HealthGramProfileVC.swift */,
 				A3C530632396270500F44D1E /* CameraVC.swift */,
 				A3C5306B23976FDA00F44D1E /* HealthGramRegistrationVC.swift */,
 				A3C530712397726900F44D1E /* HealthGramExerciseInfoVC.swift */,
@@ -129,6 +133,8 @@
 		2A0B8848238CEF64005D8AE9 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				469DEDC22399C6420015D762 /* ExerciseCell.swift */,
+				469DEDC12399C6420015D762 /* PostCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -365,14 +371,16 @@
 				2A0B88432388C1F5005D8AE9 /* HealthGramExercisesVC.swift in Sources */,
 				2A0B8847238CCF2C005D8AE9 /* Alerts.swift in Sources */,
 				A3C5306C23976FDA00F44D1E /* HealthGramRegistrationVC.swift in Sources */,
+				469DEDC42399C6420015D762 /* ExerciseCell.swift in Sources */,
 				4618E92723921878003A2FF2 /* ExercisePost.swift in Sources */,
 				4600365E23874EAE00E60EF6 /* AppDelegate.swift in Sources */,
 				2ACADAB423963BB400B9097D /* Button.swift in Sources */,
-				2A0B88452388D6A6005D8AE9 /* HealthLabProfileVC.swift in Sources */,
+				2A0B88452388D6A6005D8AE9 /* HealthGramProfileVC.swift in Sources */,
 				A3C530642396270500F44D1E /* CameraVC.swift in Sources */,
 				A3C530722397726900F44D1E /* HealthGramExerciseInfoVC.swift in Sources */,
 				4618E92923921910003A2FF2 /* Post.swift in Sources */,
 				2A0B883F238762D2005D8AE9 /* HealthGramLoginVC.swift in Sources */,
+				469DEDC32399C6420015D762 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

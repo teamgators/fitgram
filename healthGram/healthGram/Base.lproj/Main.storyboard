@@ -190,7 +190,6 @@
                                         <connections>
                                             <outlet property="equipmentLabel" destination="acT-dj-vri" id="8Nr-vB-kTh"/>
                                             <outlet property="exerciseNameLabel" destination="PDp-Ng-5NT" id="aui-gw-D9D"/>
-                                            <outlet property="exerciseNameTable" destination="PDp-Ng-5NT" id="GDN-CN-Luz"/>
                                             <outlet property="exerciseTypeLabel" destination="xsF-4k-jE4" id="sC2-jh-2Td"/>
                                             <segue destination="d9t-gg-zcF" kind="show" id="4DU-ML-Y5A"/>
                                         </connections>
@@ -250,7 +249,7 @@
         <!--Profile-->
         <scene sceneID="bmQ-4W-GXC">
             <objects>
-                <viewController id="eU0-ds-pvr" customClass="HealthLabProfileVC" customModule="healthGram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eU0-ds-pvr" customClass="HealthGramProfileVC" customModule="healthGram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S5o-SX-9bF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -324,7 +323,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="tableView" destination="1IV-aR-pYV" id="QbV-KU-dzO"/>
+                        <outlet property="tableView" destination="1IV-aR-pYV" id="yAQ-j9-Hb9"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="logoutSegue" id="oAy-N9-cxs"/>
                     </connections>
                 </viewController>
@@ -398,7 +397,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7AI-cA-JC2" customClass="Button" customModule="healthGram" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7AI-cA-JC2" customClass="Button" customModule="healthGram" customModuleProvider="target">
                                 <rect key="frame" x="88" y="528" width="239" height="72"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
@@ -409,10 +408,10 @@
                                     <action selector="onNewAccount:" destination="Pih-4N-ww0" eventType="touchUpInside" id="BGG-wn-SQx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCu-6M-QEe">
-                                <rect key="frame" x="79" y="681" width="257" height="40"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Already have an Account">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="JCu-6M-QEe">
+                                <rect key="frame" x="79" y="650" width="257" height="142"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Have an account?">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
@@ -423,14 +422,14 @@
                         <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="0.84894049657534243" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="7AI-cA-JC2" firstAttribute="leading" secondItem="vnV-JP-BUm" secondAttribute="leading" constant="88" id="0MO-9u-oDx"/>
-                            <constraint firstItem="JCu-6M-QEe" firstAttribute="top" secondItem="7AI-cA-JC2" secondAttribute="bottom" constant="81" id="0b5-b6-PBQ"/>
+                            <constraint firstItem="JCu-6M-QEe" firstAttribute="top" relation="lessThanOrEqual" secondItem="7AI-cA-JC2" secondAttribute="bottom" constant="50" id="0b5-b6-PBQ"/>
                             <constraint firstItem="YLf-RT-78K" firstAttribute="top" secondItem="vnV-JP-BUm" secondAttribute="top" constant="77" id="3bz-9f-fpn"/>
                             <constraint firstItem="vnV-JP-BUm" firstAttribute="trailing" secondItem="zTf-u9-zsW" secondAttribute="trailing" constant="63" id="3gZ-ct-QJ4"/>
                             <constraint firstItem="vnV-JP-BUm" firstAttribute="trailing" secondItem="7AI-cA-JC2" secondAttribute="trailing" constant="87" id="4TX-ms-ZbB"/>
                             <constraint firstItem="7AI-cA-JC2" firstAttribute="top" secondItem="zTf-u9-zsW" secondAttribute="bottom" constant="29" id="4w1-qE-sqn"/>
                             <constraint firstItem="vnV-JP-BUm" firstAttribute="trailing" secondItem="Vty-iO-5H7" secondAttribute="trailing" constant="63" id="5ix-Qx-QFE"/>
                             <constraint firstItem="zTf-u9-zsW" firstAttribute="leading" secondItem="vnV-JP-BUm" secondAttribute="leading" constant="62" id="AXn-kK-7o7"/>
-                            <constraint firstItem="vnV-JP-BUm" firstAttribute="bottom" secondItem="JCu-6M-QEe" secondAttribute="bottom" constant="141" id="Fdu-dI-7L6"/>
+                            <constraint firstItem="vnV-JP-BUm" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="JCu-6M-QEe" secondAttribute="bottom" constant="70" id="Fdu-dI-7L6"/>
                             <constraint firstItem="ap2-Mo-7Wi" firstAttribute="top" secondItem="BU5-ge-dCz" secondAttribute="bottom" constant="29" id="Lsf-1i-4ab"/>
                             <constraint firstItem="Vty-iO-5H7" firstAttribute="leading" secondItem="vnV-JP-BUm" secondAttribute="leading" constant="62" id="N7I-hv-eqw"/>
                             <constraint firstItem="JCu-6M-QEe" firstAttribute="leading" secondItem="vnV-JP-BUm" secondAttribute="leading" constant="79" id="NZ6-zH-aC9"/>
@@ -462,7 +461,7 @@
         <!--Health Gram Exercise InfoVC-->
         <scene sceneID="Zl0-78-QoQ">
             <objects>
-                <viewController id="d9t-gg-zcF" customClass="HealthGramExerciseInfoVC" sceneMemberID="viewController">
+                <viewController id="d9t-gg-zcF" customClass="HealthGramExerciseInfoVC" customModule="healthGram" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Te-Om-H8d">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -497,8 +496,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="mbU-AL-Pkl"/>
                     <connections>
-                        <outlet property="exerciseInstructionTextView" destination="OfN-rZ-r89" id="rgQ-VC-5w5"/>
-                        <outlet property="exerciseInstructionsTextView" destination="OfN-rZ-r89" id="AHm-KS-dwK"/>
+                        <outlet property="exerciseInstructionTextView" destination="OfN-rZ-r89" id="UWB-qM-mrg"/>
                         <outlet property="exerciseNameLabel" destination="bKW-n7-Ca9" id="Cle-ET-bgM"/>
                     </connections>
                 </viewController>

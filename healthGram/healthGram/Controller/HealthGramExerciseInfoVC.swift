@@ -15,11 +15,12 @@ class HealthGramExerciseInfoVC: UIViewController {
     var image: UIImage!
     
     @IBOutlet weak var exerciseNameLabel: UILabel!
-    @IBOutlet weak var exerciseInstructionsTextView: UITextView!
+    @IBOutlet weak var exerciseInstructionTextView: UITextView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        exerciseInstructionsTextView.text = exerciseInstructions
+        exerciseInstructionTextView.text = exerciseInstructions
         exerciseNameLabel.text = exerciseName
         // Do any additional setup after loading the view.
     }

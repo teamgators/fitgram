@@ -11,8 +11,8 @@ import FirebaseAuth
 import FirebaseDatabase
 import FirebaseStorage
 
-class HealthLabProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+class HealthGramProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
     @IBOutlet weak var tableView: UITableView!
     
     //array of Post (refer to Post.swift file)

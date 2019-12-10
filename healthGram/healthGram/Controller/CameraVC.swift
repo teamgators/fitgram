@@ -11,7 +11,7 @@ import FirebaseAuth
 import FirebaseDatabase
 import FirebaseStorage
 
-class CameraVC: UIViewController {
+class CameraVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var captionField: UITextField!
@@ -56,7 +56,7 @@ class CameraVC: UIViewController {
                     let postDic = [
                         "imageUrl" : imageDownloadUrl!.absoluteString,
                         "caption" : self.captionField.text!,
-                        "uid" : uid
+                        "uid" : uid!
                         ] as [String : Any]
                     
                     print("dic created")
@@ -76,7 +76,7 @@ class CameraVC: UIViewController {
     @IBAction func onCameraButton(_ sender: Any) {
         
         let picker = UIImagePickerController()
-        picker.delegate = (self as! UIImagePickerControllerDelegate &
+        picker.delegate = (self as UIImagePickerControllerDelegate &
             UINavigationControllerDelegate)
         picker.allowsEditing = true
         
