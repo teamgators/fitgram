@@ -23,7 +23,6 @@ class HealthGramProfileVC: UIViewController, UITableViewDelegate, UITableViewDat
 
         tableView.delegate = self
         tableView.dataSource = self
-        // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -31,7 +30,8 @@ class HealthGramProfileVC: UIViewController, UITableViewDelegate, UITableViewDat
         
         Database.database().reference().child("photoPosts").observe(.childAdded) { (snapshot) in
             let newPost = Post(snapshot: snapshot)
-            
+
+            //self.posts.removeAll()
             self.posts.insert(newPost, at: 0)
             let indexPath = IndexPath(row: 0, section: 0)
             self.tableView.insertRows(at: [indexPath], with: .top)
