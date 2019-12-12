@@ -19,8 +19,8 @@ HealthGram is a personal trainer in the form of a mobile application that guides
 - User can stay signed in
 - User can browse through lists of workout exercises
 - User can tap an exercise to view a more detailed screen with the exercise's description
-- User can post a photo to their profile
-- User can view a feed of photos posted by themselves
+- User can view a global fed of photos
+- User can post a photo to the global feed
 
 **Nice to have features**
 - User can delete a post
