@@ -30,3 +30,29 @@ HealthGram is a personal trainer in the form of a mobile application that guides
 ### 2. Wireframes/Design
 
 <img src="https://i.imgur.com/F4Nfp1n.jpg" width=500>
+
+### 3. Navigation
+
+**Tab Navigation** (Tab to Screen)
+
+* Exercise
+* Profile
+
+**Flow Navigation** (Screen to Screen)
+
+* Login Screen
+   * => Exercise Screen
+   * => Registration Screen (for new users to register)
+* Register Screen
+   * => Exercise Screen
+* Exercise Screen
+   * => Exercise Detail Screen
+* Exercise Detail Screen
+   * => Exercise Screen
+* Profile Screen
+   * => Creation Screen
+* Creation Sreen
+   * => Profile Screen (after creating a post)
+   
+
+
