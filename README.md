@@ -53,4 +53,3 @@ HealthGram is a personal trainer in the form of a mobile application that guides
    * => Creation Screen
 * Creation Sreen
    * => Profile Screen (after creating a post)
-   
