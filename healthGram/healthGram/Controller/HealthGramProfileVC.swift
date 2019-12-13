@@ -23,19 +23,22 @@ class HealthGramProfileVC: UIViewController, UITableViewDelegate, UITableViewDat
 
         tableView.delegate = self
         tableView.dataSource = self
+        loadPosts()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
+        loadPosts()
+    }
+    
+    func loadPosts() {
+        posts.removeAll()
         
-        Database.database().reference().child("photoPosts").observe(.childAdded) { (snapshot) in
+        // grab data from database and insert into array
+        Database.database().reference().child("photoPosts").observe(.childAdded) { (snapshot: DataSnapshot) in
             let newPost = Post(snapshot: snapshot)
-
-            //self.posts.removeAll()
-            self.posts.insert(newPost, at: 0)
-            let indexPath = IndexPath(row: 0, section: 0)
-            self.tableView.insertRows(at: [indexPath], with: .top)
-            
+            self.posts.append(newPost)
+            print(self.posts)
             self.tableView.reloadData()
         }
     }
@@ -47,10 +50,10 @@ class HealthGramProfileVC: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
-        let post = posts[indexPath.row]
-
+        
+        let uid = posts[indexPath.row].uid
         // to grab user's firstName using uid, and set it to the post's usernameLabel
-        Database.database().reference().child("user").child(post.uid!).observeSingleEvent(of: .value, with: { (snapshot) in
+        Database.database().reference().child("user").child(uid!).observeSingleEvent(of: .value, with: { (snapshot) in
             // Get user value
             let value = snapshot.value as? NSDictionary
             cell.usernameLabel.text  = value?["firstName"] as? String ?? ""
@@ -60,30 +63,24 @@ class HealthGramProfileVC: UIViewController, UITableViewDelegate, UITableViewDat
             print(error.localizedDescription)
         }
         
-        cell.captionLabel.text = post.caption
-        print("caption: \(String(describing: cell.captionLabel.text))")
+        cell.captionLabel.text = posts[indexPath.row].caption
+        let imageUrl = posts[indexPath.row].imageDownloadUrl
+        print("imageUrl: \(String(describing: imageUrl))")
         
-        // grab image using imageUrl
-        if let imageDownloadUrl = post.imageDownloadUrl {
-            
-            print("imageDownloadUrl: \(imageDownloadUrl)")
-            
-            let imageStorageRef = Storage.storage().reference(forURL: imageDownloadUrl)
-            
-            // grab image from Storage
-            imageStorageRef.getData(maxSize: 2*1024*1024) { (data, error) in
-                if error != nil {
-                    print(error?.localizedDescription ?? "")
-                    return
-                } else {
-                    // set image
-                    if let imageData = data {
-                        let image = UIImage(data: imageData)
-                        cell.imageView!.image = image
-                    }
+        let imageStorageRef = Storage.storage().reference(forURL: imageUrl!)
+        
+        // grab image from Storage
+        imageStorageRef.getData(maxSize: 2*1024*1024) { (data, error) in
+            if error != nil {
+                print(error?.localizedDescription ?? "")
+                return
+            } else {
+                // set image
+                if let imageData = data {
+                    let image = UIImage(data: imageData)
+                    cell.imageView!.image = image
                 }
             }
-            
         }
         
         return cell
